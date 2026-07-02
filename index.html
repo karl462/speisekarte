@@ -4,50 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Speisekarte</title>
-  <meta name="description" content="Speisekarte">
   <style>
-    :root { color-scheme: light; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f2ed; color: #222; }
-    header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); border-bottom: 1px solid #ddd; padding: 12px 16px; text-align: center; }
-    h1 { margin: 0; font-size: 22px; }
-    .hint { margin-top: 4px; font-size: 13px; color: #555; }
-    main { width: min(920px, 100%); margin: 0 auto; padding: 14px 10px 32px; }
-    .page { margin: 0 auto 16px; background: white; box-shadow: 0 2px 12px rgba(0,0,0,.12); border-radius: 8px; overflow: hidden; }
-    .page img { display: block; width: 100%; height: auto; }
-    .page-number { text-align: center; font-size: 12px; color: #666; padding: 6px 0 8px; }
-    .top { position: fixed; right: 14px; bottom: 14px; background: #222; color: white; text-decoration: none; border-radius: 999px; padding: 10px 13px; font-size: 14px; box-shadow: 0 2px 10px rgba(0,0,0,.25); }
-    @media (max-width: 600px) { main { padding: 8px 6px 24px; } .page { border-radius: 4px; margin-bottom: 10px; } header { padding: 10px 12px; } h1 { font-size: 19px; } }
-    @media print { header, .top, .page-number { display: none; } body { background:white; } main { width:100%; padding:0; } .page { box-shadow:none; margin:0; border-radius:0; page-break-after: always; } }
+    body {
+      margin: 0;
+      background: #f5f2ed;
+      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid #ddd;
+      padding: 12px 16px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+    .hint {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #555;
+    }
+    main {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: 14px 10px 32px;
+    }
+    .page {
+      margin: 0 auto 16px;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,.12);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .page img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .page-number {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      padding: 6px 0 8px;
+    }
   </style>
 </head>
-<body id="top">
-  <header>
-    <h1>Speisekarte</h1>
-    <div class="hint">Zum Lesen einfach nach unten scrollen</div>
-  </header>
-  <main>
-    <section class="page"><img src="assets/page-01.jpg" alt="Speisekarte Seite 1" loading="lazy"><div class="page-number">Seite 1</div></section>
-    <section class="page"><img src="assets/page-02.jpg" alt="Speisekarte Seite 2" loading="lazy"><div class="page-number">Seite 2</div></section>
-    <section class="page"><img src="assets/page-03.jpg" alt="Speisekarte Seite 3" loading="lazy"><div class="page-number">Seite 3</div></section>
-    <section class="page"><img src="assets/page-04.jpg" alt="Speisekarte Seite 4" loading="lazy"><div class="page-number">Seite 4</div></section>
-    <section class="page"><img src="assets/page-05.jpg" alt="Speisekarte Seite 5" loading="lazy"><div class="page-number">Seite 5</div></section>
-    <section class="page"><img src="assets/page-06.jpg" alt="Speisekarte Seite 6" loading="lazy"><div class="page-number">Seite 6</div></section>
-    <section class="page"><img src="assets/page-07.jpg" alt="Speisekarte Seite 7" loading="lazy"><div class="page-number">Seite 7</div></section>
-    <section class="page"><img src="assets/page-08.jpg" alt="Speisekarte Seite 8" loading="lazy"><div class="page-number">Seite 8</div></section>
-    <section class="page"><img src="assets/page-09.jpg" alt="Speisekarte Seite 9" loading="lazy"><div class="page-number">Seite 9</div></section>
-    <section class="page"><img src="assets/page-10.jpg" alt="Speisekarte Seite 10" loading="lazy"><div class="page-number">Seite 10</div></section>
-    <section class="page"><img src="assets/page-11.jpg" alt="Speisekarte Seite 11" loading="lazy"><div class="page-number">Seite 11</div></section>
-    <section class="page"><img src="assets/page-12.jpg" alt="Speisekarte Seite 12" loading="lazy"><div class="page-number">Seite 12</div></section>
-    <section class="page"><img src="assets/page-13.jpg" alt="Speisekarte Seite 13" loading="lazy"><div class="page-number">Seite 13</div></section>
-    <section class="page"><img src="assets/page-14.jpg" alt="Speisekarte Seite 14" loading="lazy"><div class="page-number">Seite 14</div></section>
-    <section class="page"><img src="assets/page-15.jpg" alt="Speisekarte Seite 15" loading="lazy"><div class="page-number">Seite 15</div></section>
-    <section class="page"><img src="assets/page-16.jpg" alt="Speisekarte Seite 16" loading="lazy"><div class="page-number">Seite 16</div></section>
-    <section class="page"><img src="assets/page-17.jpg" alt="Speisekarte Seite 17" loading="lazy"><div class="page-number">Seite 17</div></section>
-    <section class="page"><img src="assets/page-18.jpg" alt="Speisekarte Seite 18" loading="lazy"><div class="page-number">Seite 18</div></section>
-    <section class="page"><img src="assets/page-19.jpg" alt="Speisekarte Seite 19" loading="lazy"><div class="page-number">Seite 19</div></section>
-    <section class="page"><img src="assets/page-20.jpg" alt="Speisekarte Seite 20" loading="lazy"><div class="page-number">Seite 20</div></section>
-  </main>
-  <a class="top" href="#top">↑</a>
+<body>
+
+<header>
+  <h1>Speisekarte</h1>
+  <div class="hint">Zum Lesen einfach nach unten scrollen</div>
+</header>
+
+<main>
+  <section class="page"><img src="page-02.jpg" alt="Speisekarte Seite 2"><div class="page-number">Seite 2</div></section>
+  <section class="page"><img src="page-03.jpg" alt="Speisekarte Seite 3"><div class="page-number">Seite 3</div></section>
+  <section class="page"><img src="page-04.jpg" alt="Speisekarte Seite 4"><div class="page-number">Seite 4</div></section>
+  <section class="page"><img src="page-05.jpg" alt="Speisekarte Seite 5"><div class="page-number">Seite 5</div></section>
+  <section class="page"><img src="page-06.jpg" alt="Speisekarte Seite 6"><div class="page-number">Seite 6</div></section>
+  <section class="page"><img src="page-07.jpg" alt="Speisekarte Seite 7"><div class="page-number">Seite 7</div></section>
+  <section class="page"><img src="page-08.jpg" alt="Speisekarte Seite 8"><div class="page-number">Seite 8</div></section>
+  <section class="page"><img src="page-09.jpg" alt="Speisekarte Seite 9"><div class="page-number">Seite 9</div></section>
+  <section class="page"><img src="page-10.jpg" alt="Speisekarte Seite 10"><div class="page-number">Seite 10</div></section>
+  <section class="page"><img src="page-11.jpg" alt="Speisekarte Seite 11"><div class="page-number">Seite 11</div></section>
+  <section class="page"><img src="page-12.jpg" alt="Speisekarte Seite 12"><div class="page-number">Seite 12</div></section>
+  <section class="page"><img src="page-13.jpg" alt="Speisekarte Seite 13"><div class="page-number">Seite 13</div></section>
+  <section class="page"><img src="page-14.jpg" alt="Speisekarte Seite 14"><div class="page-number">Seite 14</div></section>
+  <section class="page"><img src="page-15.jpg" alt="Speisekarte Seite 15"><div class="page-number">Seite 15</div></section>
+  <section class="page"><img src="page-16.jpg" alt="Speisekarte Seite 16"><div class="page-number">Seite 16</div></section>
+  <section class="page"><img src="page-17.jpg" alt="Speisekarte Seite 17"><div class="page-number">Seite 17</div></section>
+  <section class="page"><img src="page-18.jpg" alt="Speisekarte Seite 18"><div class="page-number">Seite 18</div></section>
+  <section class="page"><img src="page-19.jpg" alt="Speisekarte Seite 19"><div class="page-number">Seite 19</div></section>
+  <section class="page"><img src="page-20.jpg" alt="Speisekarte Seite 20"><div class="page-number">Seite 20</div></section>
+</main>
+
 </body>
 </html>
